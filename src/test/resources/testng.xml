@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Automation Suite" verbose="1" parallel="false">
+
+    <!--
+      Suite parameter to control which browser to open.
+      Supported values in BaseTest:
+        - chrome
+        - firefox
+        - edge
+
+      Example:
+        <parameter name="browser" value="chrome"/>
+        <parameter name="browser" value="firefox"/>
+    -->
+    <parameter name="browser" value="chrome"/>
+
+    <test name="Login Tests">
+        <classes>
+            <!-- Main script/test class -->
+            <class name="com.automation.tests.LoginTest"/>
+        </classes>
+    </test>
+</suite>
+
